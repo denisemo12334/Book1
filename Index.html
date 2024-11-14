@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoverBooks</title>
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabeçalho */
+        .header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .site-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav, .icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        /* Seção de Pesquisa */
+        .search-section {
+            background-color: #2b2b2b;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .search-section h2 {
+            font-size: 24px;
+        }
+
+        .search-section input[type="text"] {
+            padding: 10px;
+            width: 60%;
+            max-width: 400px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* Seção de Livros */
+        .books-section {
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            justify-items: center;
+        }
+
+        .book {
+            background-color: #3a3a3a;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            width: 150px;
+        }
+
+        .book img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Seção de Encomenda */
+        .order-section {
+            background-color: #2b2b2b;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .order-text {
+            flex: 1;
+        }
+
+        .order-text h3 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+
+        .order-text p {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .order-text button {
+            padding: 10px 20px;
+            background-color: #5a5a5a;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .order-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .order-image img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+        }
+
+        /* Rodapé */
+        .footer {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="header-content">
+            <span class="site-name">CoverBooks</span>
+            <nav class="nav">
+                <span>Categoria</span>
+                <span>Favoritos</span>
+                <span>Mais Vendidos</span>
+            </nav>
+            <div class="icons">
+                <span class="cart-icon">🛒</span>
+                <span class="user-icon">👤</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de Pesquisa -->
+    <section class="search-section">
+        <h2>Já sabe por onde começar?</h2>
+        <input type="text" placeholder="Procure por um livro...">
+    </section>
+
+    <!-- Seção de Novos Lançamentos -->
+    <section class="books-section">
+        <h3 class="section-title">Novos Lançamentos</h3>
+        <div class="books-grid">
+            <div class="book">
+                <img src="images/livro_do_bill.jpg" alt="Livro do Bill">
+                <p>Livro do Bill</p>
+            </div>
+            <div class="book">
+                <img src="images/into_the_pit.jpg" alt="Into the Pit">
+                <p>Into the Pit (FNaF)</p>
+            </div>
+            <div class="book">
+                <img src="images/illusion_of_living.jpg" alt="The Illusion of Living">
+                <p>The Illusion of Living</p>
+            </div>
+            <!-- Mais opções de lançamentos -->
+            <div class="book">
+                <img src="images/livro_extra1.jpg" alt="Livro Extra 1">
+                <p>Livro Extra 1</p>
+            </div>
+            <div class="book">
+                <img src="images/livro_extra2.jpg" alt="Livro Extra 2">
+                <p>Livro Extra 2</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Mais Vendidos -->
+    <section class="books-section">
+        <h3 class="section-title">Mais Vendidos</h3>
+        <div class="books-grid">
+            <div class="book">
+                <img src="images/mais_vendido1.jpg" alt="Mais Vendido 1">
+                <p>Mais Vendido 1</p>
+            </div>
+            <div class="book">
+                <img src="images/mais_vendido2.jpg" alt="Mais Vendido 2">
+                <p>Mais Vendido 2</p>
+            </div>
+            <div class="book">
+                <img src="images/mais_vendido3.jpg" alt="Mais Vendido 3">
+                <p>Mais Vendido 3</p>
+            </div>
+            <!-- Mais opções de mais vendidos -->
+            <div class="book">
+                <img src="images/mais_vendido4.jpg" alt="Mais Vendido 4">
+                <p>Mais Vendido 4</p>
+            </div>
+            <div class="book">
+                <img src="images/mais_vendido5.jpg" alt="Mais Vendido 5">
+                <p>Mais Vendido 5</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Encomenda -->
+    <section class="order-section">
+        <div class="order-text">
+            <h3>Encomende seu livro favorito conosco!</h3>
+            <p>Faça a encomenda dos livros que deseja e receba diretamente em sua casa. Garantimos uma experiência rápida e segura.</p>
+            <button>Saiba Mais</button>
+        </div>
+        <div class="order-image">
+            <img src="images/encomenda.jpg" alt="Encomenda de Livros">
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>Email de contato: coverbooks@gmail.com</p>
+    </footer>
+
+</body>
+  </html
